@@ -2,6 +2,7 @@ import "./App.css";
 import Counter from "./components/Counter/Counter";
 import ExternalUsers from "./components/ExternalUsers/ExternalUsers";
 import Person from "./components/Person/Person";
+import Todos from "./components/Todos/Todos";
 
 function App() {
   const players = [
@@ -75,12 +76,15 @@ function App() {
   return (
     <>
       <div>
-      <div>
-        <Counter></Counter>
-      </div>
-      <div>
-        <ExternalUsers></ExternalUsers>
-      </div>
+        <div>
+          <Counter></Counter>
+        </div>
+        <div>
+        <Todos></Todos>
+        </div>
+        <div>
+          <ExternalUsers></ExternalUsers>
+        </div>
         {players.map((player, index) => (
           <Person
             key={index}
@@ -92,15 +96,6 @@ function App() {
           ></Person>
         ))}
         {/* <Person name="Mashrafee Bin Martuza" country="Bangladesh"></Person>
-        <Person name="Tamim Iqbal Khan" country="Bangladesh"></Person>
-        <Person name="Shakib Al Hasan" country="Bangladesh"></Person>
-        <Person name="Mushfiqur Rahim" country="Bangladesh"></Person>
-        <Person name="Mahmudullah" country="Bangladesh"></Person>
-        <Person name="Imrul Kayes" country="Bangladesh"></Person>
-        <Person name="Litton Das" country="Bangladesh"></Person>
-        <Person name="Mehedi Hasan Miraz" country="Bangladesh"></Person>
-        <Person name="Taskin Ahmed" country="Bangladesh"></Person>
-        <Person name="Mustafizur Rahman" country="Bangladesh"></Person>
         <Person name="Hasan Mahmud" country="Bangladesh"></Person> */}
       </div>
     </>
@@ -108,4 +103,3 @@ function App() {
 }
 
 export default App;
-

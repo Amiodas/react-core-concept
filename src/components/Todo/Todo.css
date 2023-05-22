@@ -1,0 +1,8 @@
+.todo-default-style {
+    background: rgb(83, 12, 12);
+    padding: 20px;
+}
+
+.todo-completed-style {
+    background: rgb(12, 83, 65);
+}
